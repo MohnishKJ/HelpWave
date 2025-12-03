@@ -1,5 +1,8 @@
-flask
-flask-socketio
-flask-sqlalchemy
-flask-cors
-eventlet
+Flask
+flask_sqlalchemy
+flask_cors
+flask_socketio
+eventlet==0.33.3
+greenlet==2.0.2
+python-dotenv
+gunicorn
