@@ -2,7 +2,7 @@ Flask
 flask_sqlalchemy
 flask_cors
 flask_socketio
-eventlet==0.33.3
-greenlet==2.0.2
+eventlet==0.36.1
+greenlet==3.0.3
 python-dotenv
 gunicorn
