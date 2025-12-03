@@ -259,4 +259,18 @@ if __name__ == '__main__':
     bg_thread.start()
     
     print("Starting SocketIO server on port 5000...")
-    socketio.run(app, debug=True, host='127.0.0.1', port=5000)
+if __name__ == '__main__':
+    print("Starting HelpWave backend...")
+
+    with app.app_context():
+        print("Creating database tables...")
+        db.create_all()
+        print("Database ready!")
+
+    # Start background task
+    print("Starting background task...")
+    bg_thread = threading.Thread(target=check_old_items, daemon=True)
+    bg_thread.start()
+
+    # Production-safe server
+    socketio.run(app, host='0.0.0.0', port=5000, debug=False)
