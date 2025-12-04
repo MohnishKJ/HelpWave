@@ -273,4 +273,6 @@ if __name__ == '__main__':
     bg_thread.start()
 
     # Production-safe server
-    socketio.run(app, host='0.0.0.0', port=5000, debug=False)
+if __name__ == "__main__":
+    socketio.run(app, host="0.0.0.0", port=5000)
+
