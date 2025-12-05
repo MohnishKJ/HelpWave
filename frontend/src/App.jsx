@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react';
 import io from 'socket.io-client';
 
 // --- Constants ---
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+const API_URL = "https://helpwave-backend-zgqd.onrender.com";
 const socket = io(API_URL);
+
 
 function App() {
   // --- State ---
