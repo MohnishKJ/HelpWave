@@ -2,5 +2,6 @@ Flask
 flask_sqlalchemy
 flask_cors
 flask_socketio
+eventlet
 python-dotenv
 gunicorn
