@@ -21,7 +21,8 @@ The platform is designed for classrooms, study groups, and collaborative learnin
 - SQLite
 
 ### Deployment
-- Render (for both frontend and backend)
+- Render (Backend)
+- Netlify (Frontend)
 
 ### Version Control
 - Git
